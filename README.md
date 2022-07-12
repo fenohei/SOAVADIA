@@ -4,7 +4,7 @@
 
 <h2>Presentation</h2>
 <p>Soavadiha est un projet sur l'architecture de donnée d'une agence de transport. Elle consiste
-à creer une application sur la gestion de cette agence: y compris la gestion de traget, la gestion
+à creer une application sur la gestion de cette agence: y compris la gestion de trajet, la gestion
 des clients et payements; mais aussi la gestion des staffs et maintenances des vehicules.</p>
 
 <h2>L'architecture de la base</h2>
