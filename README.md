@@ -1,4 +1,4 @@
-<h1>Soavadiha :bus:</h1>
+<h1>Soavadiha;madagascar: :bus:</h1>
 
 <h3>Ce projet est basé sur Postgresql :elephant:</h3>
 
@@ -12,9 +12,9 @@ des clients et payements; mais aussi la gestion des staffs et maintenances des v
 
 <h2>Dependance</h2>
 <ul>
-    <li>OS: Windows 10 ou Windows les plus récents</li>
-    <li>Postgresql :elephant: => SQL Shell et Pg admin</li>
-    <li>Merise ou Datagrip: pour lire le fichier MCD dans image</li>
+    <li>:computer: OS: Windows 10 ou Windows les plus récents</li>
+    <li>:elephant: Postgresql => SQL Shell et Pg admin</li>
+    <li>:large_blue_diamond:Merise ou Datagrip: pour lire le fichier MCD dans image</li>
 </ul>
 <h6>D'autre OS sont possible, mais Windows 10 est l'OS utilisé pour ce projet</h6>
 <p>OS: Linux mint 20 ou ubuntu et Mac sont possible mais attention les commandes ci dessous pourront etre différentes</p>
