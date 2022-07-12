@@ -32,16 +32,16 @@ des clients et payements; mais aussi la gestion des staffs et maintenances des v
     <li>Entrer dans SQL Shell</li>
     <li>Executer le fichier soavadia.sql</li>
 </ul>
-<img src="/image/execution_cmd.PNG">
+<img src="/image/execution.PNG">
 <h6>Synthaxe de base: \i chemin_absolue/soavadia.sql</h6>
 <p>Pour creer et se connecter à la base-de-donee SOAVADIA</p>
 
 <ul>
 <h3>Insertion des données dans SOAVADIA</h3>
-    <li>Entrer dans le dossier insert_table</li>
+    <li>Entrer dans le dossier <h5>insert</h5></li>
     <li>Executer le fichier insert.sql dans SQL Shell</li>
 </ul>
-<img src="/image/insertion_cmd.PNG">
+<img src="/image/insert.PNG">
 <h6>Synthaxe de base: \i chemin_absolue/insert/insert.sql</h6>
 <ul>
     <h3>Execution des requetes selects</h3>
