@@ -45,6 +45,6 @@ des clients et payements; mais aussi la gestion des staffs et maintenances des v
 <h6>Synthaxe de base: \i chemin_absolue/insert/insert.sql</h6>
 <ul>
     <h3>Execution des requetes selects</h3>
-    <li>Choisissez la requete que vous voulez executer dans le dossier ###query</li>
+    <li>Choisissez la requete que vous voulez executer dans le dossier <h5>query</h5></li>
     <li>Executez le fichier choisi dans SQL Shell</li>
 </ul>
