@@ -1,4 +1,4 @@
-<h1>Soavadiha;madagascar: :bus:</h1>
+<h1>Soavadiha:madagascar: :bus:</h1>
 
 <h3>Ce projet est basé sur Postgresql :elephant:</h3>
 
