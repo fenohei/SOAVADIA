@@ -1048,6 +1048,7 @@ insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_
 
 --insert of incident
 
+
 --insert of saison
 
 --insert of ville
@@ -1061,3 +1062,9 @@ insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_
 --insert of maintenance
 
 --insert of voiture faire maintenance
+
+--insert of voyage
+
+--insert of reservation
+
+--insert of paiement

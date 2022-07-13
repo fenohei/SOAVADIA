@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS soavadia;
 CREATE DATABASE soavadia; 
 
 \c soavadia;
