@@ -1151,6 +1151,7 @@ insert into reservation (date_reservation, en_ligne, numero_place, id_client, id
 insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-11-03', false, 68, 18, 3, 5);
 insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-01-13', false, 11, 1, 10, 3);
 insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-07-19', true, 78, 42, 5, 1);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-06-29', true, 28, 50, 11, 15);
 
 --insert of type_payement
 insert into type_payement (type_payement) values ('vanilla pay');
