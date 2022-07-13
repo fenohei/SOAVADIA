@@ -63,7 +63,7 @@ CREATE TABLE saison(
 CREATE TABLE offre(
     id_offre serial primary key,
     nombre_place int check(nombre_place > 0),
-    coef_offre int check(coef_offre > 0)
+    coef_offre float check(coef_offre > 0)
 );
 
 CREATE TABLE maintenance(
