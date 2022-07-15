@@ -1045,3 +1045,131 @@ insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_
 insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_chauffeur, salaire_chauffeur, cin_chauffeur) values (18, 'Sam', 'Lashford', '140-671-1047', 283160, '955213833-7');
 insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_chauffeur, salaire_chauffeur, cin_chauffeur) values (19, 'Griffie', 'Pina', '346-657-6977', 40858, '766380875-4');
 insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_chauffeur, salaire_chauffeur, cin_chauffeur) values (20, 'Conrado', 'Lemanu', '240-168-3791', 40639, '084956061-6');
+
+--insert of incident
+insert into incident (description_incident, depense_incident) values ('fissuration de vitre', 750000);
+insert into incident (description_incident, depense_incident) values ('pneu usée', 1000000);
+insert into incident (description_incident, depense_incident) values ('pneu creuvé', 95);
+insert into incident (description_incident, depense_incident) values ('moteur surchauffé', 47);
+insert into incident (description_incident, depense_incident) values ('fissuration carrosserie', 73);
+
+--insert of season
+insert into saison (evenement, coef_saison) values ('porta volutpat', 1.6);
+insert into saison (evenement, coef_saison) values ('dui vel', 1.3);
+insert into saison (evenement, coef_saison) values ('penatibus et', 1.1);
+insert into saison (evenement, coef_saison) values ('velit nec', 0.3);
+insert into saison (evenement, coef_saison) values ('hac habitasse', 1.8);
+
+--insert of twon
+insert into ville (nom_ville) values ('Mahajanga');
+insert into ville (nom_ville) values ('Toamasina');
+insert into ville (nom_ville) values ('Tolear');
+insert into ville (nom_ville) values ('Antsirabe');
+insert into ville (nom_ville) values ('Antananarivo');
+
+--insert of trajet
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (1000000, 800000, 1, 2);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (1500000, 850000, 1, 3);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (500000, 350000, 2, 3);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (500000, 350000, 2, 4);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (150000, 100000, 4, 5);
+
+
+--insert of offre
+insert into offre (nombre_place, coef_offre) values (66, 0.6);
+insert into offre (nombre_place, coef_offre) values (39, 0.8);
+insert into offre (nombre_place, coef_offre) values (70, 0.3);
+insert into offre (nombre_place, coef_offre) values (25, 0.9);
+insert into offre (nombre_place, coef_offre) values (66, 0.4);
+
+--insert of vehicule
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBE-6694', false, 5);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBK-9099', false, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TAD-9236', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBI-3704', false, 4);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TAF-8671', false, 5);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBV-5180', true, 4);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBH-1317', false, 5);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBN-6140', true, 2);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBO-2936', true, 4);
+insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBD-5134', true, 2);
+
+--insert of maintenance
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('changement des pneus usées', 53725, '2022-03-01');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('renouvellement des peintures de carrosseries', 92731, '2021-11-06');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('revision mecanique', 82063, '2022-05-27');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('revision kilométrage au compteur', 19184, '2021-10-14');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('revision matériel du véhicule', 70900, '2021-08-10');
+
+--insert of faire_maintenance
+insert into faire_maintenance (id_voiture, id_maintenance) values (3, 1);
+insert into faire_maintenance (id_voiture, id_maintenance) values (1, 5);
+insert into faire_maintenance (id_voiture, id_maintenance) values (6, 5);
+insert into faire_maintenance (id_voiture, id_maintenance) values (7, 4);
+insert into faire_maintenance (id_voiture, id_maintenance) values (7, 1);
+
+
+--insert of voyage
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-11-24', '5:33', 4502, 3, 5, 3, 6, 12);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-05-31', '18:10', 9783, 5, 1, 4, 4, 15);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-01-23', '16:44', 4238, 5, 2, 4, 7, 15);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-08-02', '9:08', 5508, 3, 3, 2, 8, 19);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-08-13', '9:38', 1157, 5, 1, 4, 7, 19);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-09-29', '21:14', 8062, 5, 4, 3, 1, 4);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-09-12', '6:38', 8174, 3, 1, 3, 7, 10);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-03-17', '6:36', 3611, 2, 1, 4, 9, 10);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-12-10', '8:00', 3793, 1, 5, 2, 6, 13);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-01-04', '6:53', 997, 4, 2, 5, 10, 8);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-03-07', '20:34', 8961, 5, 1, 2, 2, 7);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-07-07', '6:30', 3684, 3, 1, 3, 8, 5);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-05-04', '16:20', 8081, 5, 1, 2, 8, 10);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-11-01', '17:13', 445, 1, 4, 3, 10, 10);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-06-25', '1:02', 2495, 4, 3, 3, 8, 18);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-03-13', '6:48', 5352, 4, 4, 5, 3, 15);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-04-19', '4:41', 2061, 4, 5, 4, 5, 2);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2021-12-14', '0:11', 2736, 2, 3, 5, 3, 16);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-01-21', '17:51', 9464, 5, 1, 2, 5, 2);
+insert into voyage (date_depart, horaire_depart, depense_regulier, id_incident, id_trajet, id_saison, id_voiture, id_chauffeur) values ('2022-03-05', '8:46', 5021, 5, 3, 5, 9, 20);
+
+--insert of reservation
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-07-09', true, 37, 2, 18, 4);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-10-01', true, 3, 4, 4, 1);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-01-18', true, 74, 9, 19, 5);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-01-06', true, 15, 36, 16, 3);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-05-18', true, 13, 5, 17, 5);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-04-30', false, 75, 40, 10, 3);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-11-27', false, 59, 21, 14, 2);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-12-10', false, 77, 5, 7, 5);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-11-27', false, 64, 49, 3, 2);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-03-25', false, 67, 30, 9, 4);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-10-19', true, 60, 25, 1, 2);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-04-19', false, 73, 8, 3, 4);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-09-09', false, 37, 33, 4, 1);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-03-16', false, 39, 25, 20, 3);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-02-26', true, 67, 36, 18, 5);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-05-09', false, 13, 7, 15, 3);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-11-03', false, 68, 18, 3, 5);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2022-01-13', false, 11, 1, 10, 3);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-07-19', true, 78, 42, 5, 1);
+insert into reservation (date_reservation, en_ligne, numero_place, id_client, id_voyage, id_receptionniste) values ('2021-06-29', true, 28, 50, 11, 15);
+
+--insert of type_payement
+insert into type_payement (type_payement) values ('vanilla pay');
+insert into type_payement (type_payement) values ('airtel money');
+insert into type_payement (type_payement) values ('vanilla pay');
+insert into type_payement (type_payement) values ('mvola');
+insert into type_payement (type_payement) values ('vanilla pay');
+insert into type_payement (type_payement) values ('orange money');
+
+--insert of paiement
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-03-21', false, 144043, 4, 13);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-01-24', true, 124419, 3, 19);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-02-03', false, 116548, 2, 9);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2021-08-13', true, 161215, 3, 20);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2021-09-19', false, 112073, 1, 11);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-02-18', false, 115980, 4, 8);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-03-14', true, 90153, 5, 11);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-07-08', true, 96611, 5, 15);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-03-23', true, 166541, 2, 3);
+insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-07-05', false, 89702, 2, 10);
+
