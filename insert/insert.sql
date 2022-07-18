@@ -1047,32 +1047,32 @@ insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_
 insert into chauffeur (id_chauffeur, nom_chauffeur, prenom_chauffeur, telephone_chauffeur, salaire_chauffeur, cin_chauffeur) values (20, 'Conrado', 'Lemanu', '240-168-3791', 40639, '084956061-6');
 
 --insert of incident
-insert into incident (description_incident, depense_incident) values ('vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia', 90);
-insert into incident (description_incident, depense_incident) values ('pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet', 76);
-insert into incident (description_incident, depense_incident) values ('id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede', 95);
-insert into incident (description_incident, depense_incident) values ('ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor', 47);
-insert into incident (description_incident, depense_incident) values ('curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a', 73);
+insert into incident (description_incident, depense_incident) values ('fissuration de vitre', 750000);
+insert into incident (description_incident, depense_incident) values ('pneu usée', 1000000);
+insert into incident (description_incident, depense_incident) values ('pneu creuvé', 95);
+insert into incident (description_incident, depense_incident) values ('moteur surchauffé', 47);
+insert into incident (description_incident, depense_incident) values ('fissuration carrosserie', 73);
 
---insert of saison
+--insert of season
 insert into saison (evenement, coef_saison) values ('porta volutpat', 1.6);
 insert into saison (evenement, coef_saison) values ('dui vel', 1.3);
 insert into saison (evenement, coef_saison) values ('penatibus et', 1.1);
 insert into saison (evenement, coef_saison) values ('velit nec', 0.3);
 insert into saison (evenement, coef_saison) values ('hac habitasse', 1.8);
 
---insert of ville
-insert into ville (nom_ville) values ('Feikeng');
-insert into ville (nom_ville) values ('Kalapagenep');
-insert into ville (nom_ville) values ('Zhaotong');
-insert into ville (nom_ville) values ('Aqsū');
-insert into ville (nom_ville) values ('Gaotan');
+--insert of twon
+insert into ville (nom_ville) values ('Mahajanga');
+insert into ville (nom_ville) values ('Toamasina');
+insert into ville (nom_ville) values ('Tolear');
+insert into ville (nom_ville) values ('Antsirabe');
+insert into ville (nom_ville) values ('Antananarivo');
 
 --insert of trajet
-insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (783, 3821, 1, 2);
-insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (842, 3746, 1, 3);
-insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (842, 3648, 2, 3);
-insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (661, 3044, 2, 4);
-insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (686, 3152, 4, 5);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (1000000, 800000, 1, 2);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (1500000, 850000, 1, 3);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (500000, 350000, 2, 3);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (500000, 350000, 2, 4);
+insert into trajet (frais_de_base, prix_carburant, id_ville_depart, id_ville_arrivee) values (150000, 100000, 4, 5);
 
 
 --insert of offre
@@ -1082,7 +1082,7 @@ insert into offre (nombre_place, coef_offre) values (70, 0.3);
 insert into offre (nombre_place, coef_offre) values (25, 0.9);
 insert into offre (nombre_place, coef_offre) values (66, 0.4);
 
---insert of voiture
+--insert of vehicule
 insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBE-6694', false, 5);
 insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBK-9099', false, 2);
 insert into voiture (immatriculation, fonctionnel, id_offre) values ('TAD-9236', true, 2);
@@ -1095,11 +1095,11 @@ insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBO-2936',
 insert into voiture (immatriculation, fonctionnel, id_offre) values ('TBD-5134', true, 2);
 
 --insert of maintenance
-insert into maintenance (description, depense_maintenance, date_maintenance) values ('mauris enim leo rhoncus sed vestibulum', 53725, '2022-03-01');
-insert into maintenance (description, depense_maintenance, date_maintenance) values ('volutpat quam pede lobortis ligula', 92731, '2021-11-06');
-insert into maintenance (description, depense_maintenance, date_maintenance) values ('diam id ornare imperdiet sapien urna', 82063, '2022-05-27');
-insert into maintenance (description, depense_maintenance, date_maintenance) values ('eu sapien cursus vestibulum proin', 19184, '2021-10-14');
-insert into maintenance (description, depense_maintenance, date_maintenance) values ('amet justo morbi ut odio cras mi pede malesuada', 70900, '2021-08-10');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('changement des pneus usées', 53725, '2022-03-01');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('renouvellement des peintures de carrosseries', 92731, '2021-11-06');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('revision mecanique', 82063, '2022-05-27');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('revision kilométrage au compteur', 19184, '2021-10-14');
+insert into maintenance (description, depense_maintenance, date_maintenance) values ('revision matériel du véhicule', 70900, '2021-08-10');
 
 --insert of faire_maintenance
 insert into faire_maintenance (id_voiture, id_maintenance) values (3, 1);
@@ -1172,4 +1172,3 @@ insert into payement (date_payement, payement_complet, montant_paye, id_type_pay
 insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-07-08', true, 96611, 5, 15);
 insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-03-23', true, 166541, 2, 3);
 insert into payement (date_payement, payement_complet, montant_paye, id_type_payement, id_reservation) values ('2022-07-05', false, 89702, 2, 10);
-
