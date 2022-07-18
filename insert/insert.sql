@@ -1156,9 +1156,7 @@ insert into reservation (date_reservation, en_ligne, numero_place, id_client, id
 --insert of type_payement
 insert into type_payement (type_payement) values ('vanilla pay');
 insert into type_payement (type_payement) values ('airtel money');
-insert into type_payement (type_payement) values ('vanilla pay');
 insert into type_payement (type_payement) values ('mvola');
-insert into type_payement (type_payement) values ('vanilla pay');
 insert into type_payement (type_payement) values ('orange money');
 
 --insert of paiement
