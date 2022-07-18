@@ -115,3 +115,23 @@ CREATE TABLE faire_maintenance(
     id_voiture int references voiture(id_voiture) not null,
     id_maintenance int references maintenance(id_maintenance) not null
 );
+
+/*if it's executed you'll see that in your SQL Shell
+CREATE DATABASE
+You are now connected to database "soavadia" as user "postgres".
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+*/
